@@ -1,0 +1,15 @@
+<h3>Here are all of the animals at the Zhu:</h3>
+<br>
+<ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList">
+  <li>
+    <div class="well">
+      <h3>{{currentAnimal.name}}</h3>
+      <h4>{{currentAnimal.age}} years old, {{currentAnimal.species}}</h4>
+      <h4>{{currentAnimal.diet}}</h4>
+      <h4>Currently hanging out at {{currentAnimal.location}}</h4>
+      <h4>Requires {{currentAnimal.caretakers}} caretakers</h4>
+      <h4>Enjoys {{currentAnimal.likes}}</h4>
+      <h4>Dislikes {{currentAnimal.dislikes}}</h4>
+    </div>
+  </li>
+</ul>
