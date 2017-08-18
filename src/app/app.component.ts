@@ -12,6 +12,7 @@ export class AppComponent {
   currentDate = new Date();
   selectedAnimal = null;
   totalCaretakers = 0;
+  averageAge = 0;
 
   masterAnimalList: Animal[] = [
     new Animal('Flamingo', 'MuShu', 3, 'Omnivore', 'Lagoon', 2, 'Female', 'Standing on one leg', 'Being alone'),
@@ -54,10 +55,16 @@ export class AppComponent {
 
   ngOnInit() : void {
     var total = 0;
+    var age = 0;
+    var counter = 0;
     this.masterAnimalList.forEach(function(currentAnimal) {
       total += currentAnimal.caretakers;
+      age += currentAnimal.age;
+      counter ++;
     })
     this.totalCaretakers = total;
+    this.averageAge = (age/counter);
+
   }
 
 }
