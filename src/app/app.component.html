@@ -6,6 +6,7 @@
   </div>
 </nav>
 <div class="container">
+  <h3>{{totalCaretakers}} caretakers needed today.</h3>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
