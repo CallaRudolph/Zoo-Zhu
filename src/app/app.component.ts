@@ -9,6 +9,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   title = 'Welcome to Zoo Zhu!!!';
+  currentDate = new Date();
   selectedAnimal = null;
   totalCaretakers = 0;
 
