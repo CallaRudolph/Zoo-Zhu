@@ -1,9 +1,15 @@
 <div class="well">
   <div *ngIf="childSelectedAnimal">
-    <h1>Edit this animal:</h1>
+    <h3>Edit {{childSelectedAnimal.name}}:</h3>
+    <label>Rename</label>
     <input [(ngModel)]=childSelectedAnimal.name>
+    <br>
+    <label>Did it have a birthday?! How old is it now?</label>
     <input [(ngModel)]=childSelectedAnimal.age>
+    <br>
+    <label>Adjust number of caretakers</label>
     <input [(ngModel)]=childSelectedAnimal.caretakers>
+    <br>
     <button (click)="doneButtonClicked()">Finished Editing</button>
   </div>
 </div>

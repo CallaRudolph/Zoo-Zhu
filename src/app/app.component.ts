@@ -29,16 +29,32 @@ export class AppComponent {
 
   finishedEditing() {
     this.selectedAnimal = null;
+    // this.caretakerCheck = true;
+    // var total = 0;
+    // this.masterAnimalList.forEach(function(currentAnimal) {
+    //   total += currentAnimal.caretakers;
+    // })
+    // this.totalCaretakers = total;
   }
 
+  // refreshCaretakers() {
+  //   console.log(this.masterAnimalList[3].caretakers);
+  //   var total = 0;
+  //   this.totalCaretakers = 0;
+  //   this.masterAnimalList.forEach(function(currentAnimal) {
+  //     total += parseInt(currentAnimal.caretakers);
+  //     console.log(total);
+  //     console.log(currentAnimal.caretakers);
+  //   })
+  //   this.totalCaretakers = total;
+  // }
+
   ngOnInit() : void {
-    if (this.masterAnimalList[0].caretakers > 0) {
-      var total = 0;
-      this.masterAnimalList.forEach(function(currentAnimal) {
-        total += currentAnimal.caretakers;
-      })
-      this.totalCaretakers = total;
-    }
+    var total = 0;
+    this.masterAnimalList.forEach(function(currentAnimal) {
+      total += currentAnimal.caretakers;
+    })
+    this.totalCaretakers = total;
   }
 
 }

@@ -2,11 +2,12 @@
   <div class="container">
     <div class="navbar-header">
       <h3>{{title}}</h3>
+      <h4><em>{{totalCaretakers}} caretakers are needed today</em></h4>
+      <!-- <button (click)="refreshCaretakers()">Refresh from updates</button> -->
     </div>
   </div>
 </nav>
 <div class="container">
-  <h3>{{totalCaretakers}} caretakers needed today.</h3>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
