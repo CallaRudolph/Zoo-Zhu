@@ -20,10 +20,6 @@ export class AnimalListComponent implements OnInit {
     this.filterByAge = optionFromMenu;
   }
 
-  toggleDone(clickedAnimal: Animal, setAge: number) {
-    clickedAnimal.age = setAge;
-  }
-
   constructor() { }
 
   ngOnInit() {

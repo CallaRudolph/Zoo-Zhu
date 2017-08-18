@@ -8,7 +8,6 @@ import { AnimalListComponent } from './animal-list/animal-list.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
 import { EditAnimalComponent } from './edit-animal/edit-animal.component';
 import { AnimalAgePipe } from './animal-age.pipe';
-import { CaretakerTotalComponent } from './caretaker-total/caretaker-total.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { CaretakerTotalComponent } from './caretaker-total/caretaker-total.compo
     AnimalListComponent,
     NewAnimalComponent,
     EditAnimalComponent,
-    AnimalAgePipe,
-    CaretakerTotalComponent
+    AnimalAgePipe
   ],
   imports: [
     BrowserModule,
