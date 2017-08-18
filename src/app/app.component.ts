@@ -9,6 +9,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   title = 'Welcome to Zoo Zhu!!!';
+  selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
     new Animal('Flamingo', 'MuShu', 3, 'Omnivore', 'Lagoon', 2, 'Female', 'Standing on one leg', 'Being alone'),
@@ -20,4 +21,13 @@ export class AppComponent {
   addAnimal(newAnimalfromChild: Animal) {
     this.masterAnimalList.push(newAnimalfromChild);
   }
+
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
+
 }

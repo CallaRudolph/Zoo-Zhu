@@ -1,6 +1,7 @@
 <br>
 <button (click)="showAddForm()">Add new animal!</button>
-<div *ngIf="addAnimal===true">
+<br><br>
+<div class="well" *ngIf="addAnimal===true">
   <h1>New Animal:</h1>
   <label>What's its name?</label>
   <input #newName><br>
@@ -19,6 +20,6 @@
   <label>Where does it like?</label>
   <input #newLikes><br>
   <label>Where does it dislike?</label>
-  <input #newDislikes><br>
+  <input #newDislikes><br><br>
   <button (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Submit new animal!</button>
 </div>

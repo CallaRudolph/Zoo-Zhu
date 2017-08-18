@@ -1,0 +1,9 @@
+<div class="well">
+  <div *ngIf="childSelectedAnimal">
+    <h1>Edit this animal:</h1>
+    <input [(ngModel)]=childSelectedAnimal.name>
+    <input [(ngModel)]=childSelectedAnimal.age>
+    <input [(ngModel)]=childSelectedAnimal.caretakers>
+    <button (click)="doneButtonClicked()">Finished Editing</button>
+  </div>
+</div>
