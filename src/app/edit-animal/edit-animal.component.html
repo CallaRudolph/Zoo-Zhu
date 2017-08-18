@@ -1,5 +1,5 @@
-<div class="well">
-  <div *ngIf="childSelectedAnimal">
+<div *ngIf="childSelectedAnimal">
+  <div class="well">
     <h3>Edit {{childSelectedAnimal.name}}:</h3>
     <label>Rename</label>
     <input [(ngModel)]=childSelectedAnimal.name>
