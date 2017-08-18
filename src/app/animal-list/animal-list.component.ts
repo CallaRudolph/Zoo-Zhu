@@ -12,6 +12,14 @@ export class AnimalListComponent implements OnInit {
   @Output() clickSender = new EventEmitter();
   filterByAge: string = "allAnimals";
 
+  ageStyle(currentAnimal) {
+    if (currentAnimal.age > 10) {
+      return "old";
+    } else {
+      return "";
+    }
+  }
+
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }
