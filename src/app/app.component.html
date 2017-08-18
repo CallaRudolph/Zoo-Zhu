@@ -5,7 +5,7 @@
         <div class="col-md-8">
           <h2>{{title}}</h2>
           <h4><em>{{totalCaretakers}} caretakers are needed for {{currentDate | date:'EEEE'}}</em></h4>
-          <h4><em>Average age of Zhu animals is {{averageAge}} years!!</em></h4>
+          <h4><em>Did you know that the average age of all Zhu animals is {{averageAge}} years?!</em></h4>
         </div>
         <div class="col-md-4">
           <img src="../assets/img/tree.png">
@@ -18,7 +18,7 @@
   </div>
 </nav>
 <div class="container">
-  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
   <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 </div>
