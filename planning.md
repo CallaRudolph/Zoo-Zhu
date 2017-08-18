@@ -18,7 +18,7 @@
     * animal-list to display all animals
     * new-animal to add a new animal
     * edit-animal to edit a selected animal
-  * The animal-list component will contain a pipe to view animals based on their age from animalAge.pipe.ts
+  * The animal-list component will contain a pipe to view animals based on their age from animal-age.pipe.ts
 4. UX/UI
   * Nav-bar will be used to display zoo name and a picture
   * Develop custom style with bootstrap and flex-box

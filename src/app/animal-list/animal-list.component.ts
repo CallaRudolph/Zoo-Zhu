@@ -10,9 +10,18 @@ import { Animal } from './../animal.model';
 export class AnimalListComponent implements OnInit {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
+  filterByAge: string = "allAnimals";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
+
+  toggleDone(clickedAnimal: Animal, setAge: number) {
+    clickedAnimal.age = setAge;
   }
 
   constructor() { }

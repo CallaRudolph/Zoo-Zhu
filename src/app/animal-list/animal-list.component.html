@@ -1,6 +1,11 @@
 <h3>Here are all of the animals at the Zhu:</h3>
-<br>
-<ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList">
+<select (change)="onChange($event.target.value)">
+  <option value="allAnimals" selected="selected">All Animals</option>
+  <option value="mature">2 yrs and older</option>
+  <option value="baby">Baby animals</option>
+</select>
+<br><br>
+<ul class="list-unstyled" *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAge">
   <li>
     <div class="well">
       <h3>{{currentAnimal.name}}</h3>
