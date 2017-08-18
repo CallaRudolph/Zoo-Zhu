@@ -49,3 +49,8 @@
 .old {
   color: red;
 }
+
+.needy {
+  color: cyan;
+  text-shadow: 1px 1px black;
+}

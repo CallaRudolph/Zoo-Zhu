@@ -20,6 +20,12 @@ export class AnimalListComponent implements OnInit {
     }
   }
 
+  caretakerStyle(currentAnimal) {
+    if (currentAnimal.caretakers >= 3) {
+      return "needy";
+    }
+  }
+
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }
