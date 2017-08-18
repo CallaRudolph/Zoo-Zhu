@@ -15,5 +15,9 @@ export class AppComponent {
     new Animal('Polar Bear', 'Salty', 13, 'Carnivore', 'Glacier', 4, 'Male', 'Eating the flesh of seals', 'Drunk bantering humans'),
     new Animal('Giraffe', 'Stalk', 1, 'Herbivore', 'Savanna', 6, 'Male', 'Open plains', 'Lions, Leopards, Hyenas'),
     new Animal('Meerkat', 'G-Unit', 2, 'Carnivore', 'Desert Burrows', 3, 'Female', 'Scorpions, Socializing', 'Sitting')
-  ]
+  ];
+
+  addAnimal(newAnimalfromChild: Animal) {
+    this.masterAnimalList.push(newAnimalfromChild);
+  }
 }

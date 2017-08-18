@@ -7,4 +7,5 @@
 </nav>
 <div class="container">
   <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+  <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
 </div>
