@@ -10,6 +10,7 @@
     <div class="flex-item">
       <li>
         <div class="well">
+          <div class="chains"></div>
           <h3>{{currentAnimal.name}}</h3>
           <h4>{{currentAnimal.age}} years old, {{currentAnimal.species}}</h4>
           <h4>{{currentAnimal.diet}}</h4>
@@ -17,7 +18,7 @@
           <h4>Requires {{currentAnimal.caretakers}} caretakers</h4>
           <h4>Enjoys {{currentAnimal.likes}}</h4>
           <h4>Dislikes {{currentAnimal.dislikes}}</h4>
-          <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit {{currentAnimal.name}}</button>
+          <button class="btn btn-info" id="edit" (click)="editButtonHasBeenClicked(currentAnimal)">Edit {{currentAnimal.name}}</button>
         </div>
       </li>
     </div>
