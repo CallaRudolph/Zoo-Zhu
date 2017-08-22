@@ -18,7 +18,13 @@
   </div>
 </nav>
 <div class="container">
-  <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+  <div class="row">
+    <div class="col-md-6">
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    </div>
+    <div class="col-md-6">
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+    </div>
+  </div>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-  <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 </div>
