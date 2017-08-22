@@ -4,22 +4,22 @@
 <div class="well" *ngIf="addAnimal===true">
   <h1>New Animal:</h1>
   <label>What kind of animal is it?</label>
-  <input #newSpecies><br>
+  <input type="text" #newSpecies><br>
   <label>What's its name?</label>
-  <input #newName><br>
+  <input type="text" #newName><br>
   <label>How old is it?</label>
-  <input #newAge><br>
+  <input type="number" #newAge><br>
   <label>Carnivore, Herbivore, or Omnivore?</label>
-  <input #newDiet><br>
+  <input type="text" #newDiet><br>
   <label>Where does it live at the Zhu?</label>
-  <input #newLocation><br>
+  <input type="text" #newLocation><br>
   <label>How many caretakers does it require?</label>
-  <input #newCaretakers><br>
+  <input type="number" #newCaretakers><br>
   <label>Is it male or female?</label>
-  <input #newSex><br>
+  <input type="text" #newSex><br>
   <label>What does it like?</label>
-  <input #newLikes><br>
+  <input type="text" #newLikes><br>
   <label>What does it dislike?</label>
-  <input #newDislikes><br><br>
+  <input type="text" #newDislikes><br><br>
   <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Submit new animal!</button>
 </div>

@@ -2,13 +2,13 @@
   <div class="well">
     <h3>Edit {{childSelectedAnimal.name}}:</h3>
     <label>Rename</label>
-    <input [(ngModel)]=childSelectedAnimal.name>
+    <input type="text" [(ngModel)]=childSelectedAnimal.name required>
     <br>
     <label>Did {{childSelectedAnimal.name}} have a birthday?! How old is {{childSelectedAnimal.name}} now?</label><br>
-    <input [(ngModel)]=childSelectedAnimal.age>
+    <input type="number" [(ngModel)]=childSelectedAnimal.age>
     <br>
     <label>Adjust number of caretakers</label>
-    <input [(ngModel)]=childSelectedAnimal.caretakers>
+    <input type="number" [(ngModel)]=childSelectedAnimal.caretakers>
     <br>
     <button (click)="doneButtonClicked()">Finished Editing</button>
   </div>
