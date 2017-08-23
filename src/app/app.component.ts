@@ -24,8 +24,22 @@ export class AppComponent {
     new Animal('Western Chuckwalla', 'Tilda', 25, 'Omnivore', 'Rocky Desert', 3, 'Female', 'Being pot-bellied and baggy', 'Having a scientific name of obesus obesus')
   ];
 
-  addAnimal(newAnimalfromChild: Animal) {
-    this.masterAnimalList.push(newAnimalfromChild);
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+    // why does it not allow parseInt of age and caretaker? why is it saving them as a string in the first place?
+    // console.log(newAnimalfromChild.age);
+    // this.caretakerCheck = true;
+    // var total = 0;
+    // var age = 0;
+    // var counter = 0;
+    // this.masterAnimalList.forEach(function(currentAnimal) {
+    //   console.log(currentAnimal.age);
+    //   total += currentAnimal.caretakers;
+    //   age += currentAnimal.age;
+    //   counter ++;
+    // })
+    // this.totalCaretakers = total;
+    // this.averageAge = (age/counter);
   }
 
   editAnimal(clickedAnimal) {
@@ -46,18 +60,6 @@ export class AppComponent {
     this.totalCaretakers = total;
     this.averageAge = (age/counter);
   }
-
-  // refreshCaretakers() {
-  //   console.log(this.masterAnimalList[3].caretakers);
-  //   var total = 0;
-  //   this.totalCaretakers = 0;
-  //   this.masterAnimalList.forEach(function(currentAnimal) {
-  //     total += parseInt(currentAnimal.caretakers);
-  //     console.log(total);
-  //     console.log(currentAnimal.caretakers);
-  //   })
-  //   this.totalCaretakers = total;
-  // }
 
   ngOnInit() : void {
     var total = 0;
