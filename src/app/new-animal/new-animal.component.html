@@ -22,4 +22,5 @@
   <label>What does it dislike?</label>
   <input type="text" #newDislikes><br><br>
   <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Submit new animal!</button>
+  <button (click)="cancelNewAnimal()">Cancel addition</button>
 </div>
