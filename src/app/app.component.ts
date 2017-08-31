@@ -26,20 +26,17 @@ export class AppComponent {
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
-    // why does it not allow parseInt of age and caretaker? why is it saving them as a string in the first place?
-    // console.log(newAnimalfromChild.age);
-    // this.caretakerCheck = true;
-    // var total = 0;
-    // var age = 0;
-    // var counter = 0;
-    // this.masterAnimalList.forEach(function(currentAnimal) {
-    //   console.log(currentAnimal.age);
-    //   total += currentAnimal.caretakers;
-    //   age += currentAnimal.age;
-    //   counter ++;
-    // })
-    // this.totalCaretakers = total;
-    // this.averageAge = (age/counter);
+    this.caretakerCheck = true;
+    var total = 0;
+    var age = 0;
+    var counter = 0;
+    this.masterAnimalList.forEach(function(currentAnimal) {
+      total += Math.floor(currentAnimal.caretakers);
+      age += Math.floor(currentAnimal.age);
+      counter ++;
+    })
+    this.totalCaretakers = total;
+    this.averageAge = (age/counter);
   }
 
   editAnimal(clickedAnimal) {
@@ -53,8 +50,8 @@ export class AppComponent {
     var age = 0;
     var counter = 0;
     this.masterAnimalList.forEach(function(currentAnimal) {
-      total += currentAnimal.caretakers;
-      age += currentAnimal.age;
+      total += Math.floor(currentAnimal.caretakers);
+      age += Math.floor(currentAnimal.age);
       counter ++;
     })
     this.totalCaretakers = total;
