@@ -4,15 +4,18 @@ _Angular JS Independent Project for Epicodus, 08.18.2017_
 
 By _Calla Rudolph_ [e-mail me](<mailto:callarudolph@gmail.com>)
 
-_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0._
-
 ## Description
 
-This Angular 2 app was created to track zoo animals. It displays a list of all animals with their species, name, age, diet, location, caretakers, sex, likes, and dislikes. The user can add new animals and edit existing animals. Animals may be sorted by age level (baby or mature). The app displays the total number of caretakers needed for the zoo, the current day of the week, and the average age of all zoo animals.
+This Angular 2 app was created to track zoo animals. It displays a list of all animals with their species, name, age, diet, location, caretakers, sex, likes, and dislikes. The user can add new animals and edit existing animals. Animals may be sorted by age level (baby or mature). The app displays the total number of caretakers needed for the zoo, the current day of the week, and the average age of all zoo animals. These features automatically update when a new animal is added or a current animal is edited.
 
 The purpose of this project was to utilize models, components, and pipes with one and two-way event and property bindings. This version does not utilize a database.
 
 _***Take a look at planning.md to see the foundation for this app!***_
+
+![Preview of Splash Page](src/assets/img/screenshot.png)
+_This image is a screenshot of the splash page_
+
+_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0._
 
 ## Prerequisites
 
@@ -38,10 +41,6 @@ You will need the following things properly installed on your computer:
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Known Bugs
-
-The app will not automatically update the number of caretakers needed or the average animal age if an animal is edited or a new animal is added.
 
 ## Future Functionality
 
