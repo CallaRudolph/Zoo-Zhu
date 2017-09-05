@@ -2,7 +2,9 @@
 
 _Angular JS Independent Project for Epicodus, 08.18.2017_
 
-By _Calla Rudolph_ [e-mail me](<mailto:callarudolph@gmail.com>)
+By _Calla Rudolph_ [(e-mail me here)](<mailto:callarudolph@gmail.com>)
+
+This website has been deployed for easy viewing: https://zoo-zhu.firebaseapp.com/
 
 ## Description
 
