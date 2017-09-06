@@ -35,7 +35,7 @@ You will need the following things properly installed on your computer:
 * Open Terminal on your computer and follow these steps:
   * `$ cd desktop`
   * `$ git clone <paste repository-url>`
-  * `$ cd angular-zoo`
+  * `$ cd Zoo-Zhu`
   * `$ npm install`
   * `$ bower install`
   * `$ ng build`
