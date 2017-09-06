@@ -30,7 +30,7 @@ You will need the following things properly installed on your computer:
 
 ## Installation
 
-* Open Github site in your browser: https://github.com/CallaRudolph/angular-zoo
+* Open Github site in your browser: https://github.com/CallaRudolph/Zoo-Zhu
 * Select green drop-down box to Clone or Download
 * Open Terminal on your computer and follow these steps:
   * `$ cd desktop`
@@ -46,7 +46,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Future Functionality
 
-* Implement auto-adjust for number of caretakers and average animal age if an animal is edited or a new animal is added
 * Add property to record when each animal is admitted, using a timestamp
 * Add additional pipe to show animals based on diet type
 * Include Firebase to store animals
